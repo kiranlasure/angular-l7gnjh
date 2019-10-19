@@ -3,13 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
-import { StudentComponent } from './student/student.component';
-import { TeacherComponent } from './teacher/teacher.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, StudentComponent, TeacherComponent ],
+  declarations: [ AppComponent,],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
