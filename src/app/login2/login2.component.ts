@@ -11,5 +11,7 @@ export class Login2Component implements OnInit {
 
   ngOnInit() {
   }
-
+onClickMe(){
+alert('ghhfjgf');
+}
 }
