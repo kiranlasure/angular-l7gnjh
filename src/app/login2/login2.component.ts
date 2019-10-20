@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login2.component.css']
 })
 export class Login2Component implements OnInit {
-
   Message = '';
   constructor() { }
 

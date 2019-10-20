@@ -1,9 +1,11 @@
 <div style="text-align:left">
   <br>
   <form>
-          Enter User_Name:<input type="text" name="Kiran"><br><br>
-          Enter PassWord:&nbsp;&nbsp;&nbsp;<input type="password" name="Kiran"><br><br>
-          <input type="button" class="button button3" value="Login">
-          <input type="reset" class="button button3" value="Reset">
+    <div >
+        {{name}}  <input type="text" name="Kiran"><br><br>
+         {{password}}<input type="password" name="Kiran"><br><br>
+          <input type="button" class="button button3" (click)="Signin()" value="Login">
+          <input type="reset" class="button button3" (click)="ClickonClare()"  value="Reset">
+    </div>
   </form>
 </div>

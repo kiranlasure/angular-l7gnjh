@@ -24,3 +24,15 @@
   background-color: maroon;
   color: white;
 }
+input[type=text]{
+  width: 100px;
+}
+input[type=password]{
+  width: 100px;
+}
+form{
+  margin: 50px;
+  padding-top: 5px;
+
+}
+
