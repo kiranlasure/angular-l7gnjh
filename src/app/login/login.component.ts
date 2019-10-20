@@ -20,6 +20,10 @@ Signin()
   console.log('well come you are login yet soon....');
 
 }
+GotoEmp()
+{
+  this.router.navigate(['/emp']);
+}
 ClickonClare(){
 
 }

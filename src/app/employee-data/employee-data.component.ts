@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../employee.service';
 
-
 @Component({
-  selector: 'app-login2',
-  templateUrl: './login2.component.html',
-  styleUrls: ['./login2.component.css']
+  selector: 'app-employee-data',
+  templateUrl: './employee-data.component.html',
+  styleUrls: ['./employee-data.component.css']
 })
-export class Login2Component implements OnInit {
-  Message = '';
+export class EmployeeDataComponent implements OnInit {
 
   employees = [];
   constructor(private _employeeService: EmployeeService) { }
@@ -16,7 +14,4 @@ export class Login2Component implements OnInit {
   ngOnInit() {
     this.employees = this._employeeService.getEmployees();
   }
-  onClickMe(){
-  this.Message = "Click Message Displayed";
-}
 }
