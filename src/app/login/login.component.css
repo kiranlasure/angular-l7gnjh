@@ -1,3 +1,10 @@
+.main{
+        position: relative;
+        top: 40px;
+}
+body {
+  background-color: lightblue;
+}
 .button {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -15,7 +22,7 @@
   border-radius: 4px;
 }
 .button3 {
-  background-color: white; 
+  background-color: darkorchid; 
   color: black; 
   /* border: 2px solid maroon; */
 }

@@ -12,7 +12,7 @@ public password:any;
 
   ngOnInit() {
     this.name ='Enter Name:';
-    this.password='Enter password';
+    this.password='Enter password:';
   }
 Signin()
 {
