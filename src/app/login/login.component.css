@@ -2,9 +2,6 @@
         position: relative;
         top: 40px;
 }
-body {
-  background-color: lightblue;
-}
 .button {
   background-color: #4CAF50; /* Green */
   border: none;
