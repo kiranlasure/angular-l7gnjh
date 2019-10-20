@@ -7,11 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Login2Component implements OnInit {
 
+  Message = '';
   constructor() { }
 
   ngOnInit() {
   }
-onClickMe(){
-alert('ghhfjgf');
+  onClickMe(){
+  this.Message = "Click Message Displayed";
 }
 }
