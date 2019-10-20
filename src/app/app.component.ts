@@ -5,13 +5,9 @@ import { EmployeeService } from './employee.service';
   selector: 'my-app',
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ],
-  providers: [EmployeeService]
+  providers: [EmployeeService],
 })
 
 export class AppComponent  {
-  name = 'Angular';
-
-
-
-
+ 
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from './employee.service';
+
 
 @Component({
   selector: 'app-login2',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Login2Component implements OnInit {
   Message = '';
-  constructor() { }
+
+  employees = [];
+  constructor(private _employeeService: EmployeeService) { }
 
   ngOnInit() {
+    this.employees = this._employeeService.getEmployees();
   }
   onClickMe(){
   this.Message = "Click Message Displayed";
