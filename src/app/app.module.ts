@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
-import { AppComponent} from '../app.component';
+import { AppComponent} from './app.component';
 
 
-import { AppRoutingModule, routingComponent} from '../app-routing-module.module';
+import { AppRoutingModule,routingComponent} from './app-routing-module/app-routing-module.module';
+
 
 @NgModule({
   imports:      [
@@ -17,8 +18,7 @@ import { AppRoutingModule, routingComponent} from '../app-routing-module.module'
    ],
 
   declarations: [
-  AppComponent,
-  routingComponent],
+  AppComponent,routingComponent],
 
   bootstrap:    [ AppComponent ],
 

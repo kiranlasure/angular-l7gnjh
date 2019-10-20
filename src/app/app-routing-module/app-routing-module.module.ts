@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent} from '../app.component';
-import { LoginComponent } from '../login/Login.component';
-import { Login2Component } from '../login2/Login2.component';
+import { LoginComponent } from '../login/login.component';
+import { Login2Component } from '../login2/login2.component';
 
 const routes: Routes = [
   {path:'login', component: LoginComponent},
@@ -16,9 +15,6 @@ const routes: Routes = [
 
   exports: [RouterModule],
   declarations: [
-    AppComponent,
-    LoginComponent,
-    Login2Component
   ]
 })
 export class AppRoutingModule { }
