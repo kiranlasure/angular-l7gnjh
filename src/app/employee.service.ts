@@ -3,6 +3,13 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class EmployeeService {
 
+  // Service is Module in which we can write your business logic that you to use in another component
+  // Ex. suppose we want a data of some employees in your component 
+  //      == In one component you want only Id & name then we can call this Service in that componet n display on 
+  //      Id and Name.
+
+  // we can inject your service in that component. Serivices is reusable 
+  
   getEmployees() {
     
     return [
