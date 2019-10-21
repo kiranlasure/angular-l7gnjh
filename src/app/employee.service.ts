@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
+
+//  Use this Service name in your component where you want use this logic
 export class EmployeeService {
 
   // Service is Module in which we can write your business logic that you to use in another component
