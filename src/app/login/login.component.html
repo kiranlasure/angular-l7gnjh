@@ -3,10 +3,19 @@
 
   <form>
     <div>
+
+      
         {{name}}&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Kiran"><br><br>
          {{password}}<input type="password" name="Kiran"><br><br>
           <input type="button" class="button button3" (click)="Signin()" value="Login">
           <input type="reset" class="button button3" (click)="ClickonClare()"  value="Reset">
+          
+          <!-- In Angular We use TypeScript Insted of JavaScript therefore Some Syntax are different
+                In Above code We can Create A button called Login n apply Click event on 
+                that button.
+                We can write your logic of Signin() method that is called after button Click
+                in Login.componet.html after the ngOninit method. -->
+
           <input type="button" class="button button3" (click)="GotoEmp()" value = "EMP"> 
     </div>
   </form>
