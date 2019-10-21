@@ -7,11 +7,17 @@
         <!-- Angular Interpolation:- The Angular Interpolation is Name of the Input contetnt that we want to render
             We can Declare the name that we we want to use in View/Template/HTML  
             and assign value to it in ngOnit Method. 
-            After That Declare that name in This file in {{}} bracket. -->
+            After That Declare that name in This file in {{}} bracket.
+            
+            This Is Called As Property Binding In Angular. -->
 
         {{name}}&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Kiran"><br><br>
          {{password}}<input type="password" name="Kiran"><br><br>
           <input type="button" class="button button3" (click)="Signin()" value="Login">
+
+          <!-- Event Binding : In Angular suppose we want to apply some Event on HTML element we 
+          can apply this on button on any other element. -->
+
           <input type="reset" class="button button3" (click)="ClickonClare()"  value="Reset">
           
           <!-- In Angular We use TypeScript Insted of JavaScript therefore Some Syntax are different
