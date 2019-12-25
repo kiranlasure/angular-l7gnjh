@@ -9,6 +9,7 @@ import { AppComponent} from './app.component';
 import { AppRoutingModule,routingComponent} from './app-routing-module/app-routing-module.module';
 import { EmployeeService } from './employee.service';
 import { EmployeeDataComponent } from './employee-data/employee-data.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { EmployeeDataComponent } from './employee-data/employee-data.component';
   BrowserModule, 
   FormsModule, 
   FlexLayoutModule,
-  AppRoutingModule
+  AppRoutingModule,
+  HttpClientModule
    ],
 
   declarations: [

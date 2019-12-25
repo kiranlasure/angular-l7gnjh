@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EmployeeService } from '../employee.service';
+// import { EmployeeService } from '../employee.service';
 
 
 @Component({
@@ -11,12 +11,12 @@ export class Login2Component implements OnInit {
   Message = '';
 
   employees = [];
-  constructor(private _employeeService: EmployeeService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.employees = this._employeeService.getEmployees();
+    // this.employees = this._employeeService.getEmployees();
   }
-  onClickMe(){
-  this.Message = "Click Message Displayed";
-}
+//   onClickMe(){
+//   this.Message = "Click Message Displayed";
+// }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../employee.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-employee-data',
@@ -8,10 +9,20 @@ import { EmployeeService } from '../employee.service';
 })
 export class EmployeeDataComponent implements OnInit {
 
-  employees = [];
-  constructor(private _employeeService: EmployeeService) { }
+  grooms = [];
+  
+  constructor(private groomservice: EmployeeService) { }
 
-  ngOnInit() {
-    this.employees = this._employeeService.getEmployees();
+  ngOnInit(){
+
+
+      this.groomservice.getgroomsDetails().subscribe(data =>{
+          this.grooms = data;
+
+          console.log(data);
+
+      },error=>{
+        console.log(error)
+      } );
   }
 }
