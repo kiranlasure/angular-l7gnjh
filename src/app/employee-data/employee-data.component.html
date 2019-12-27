@@ -1,6 +1,15 @@
-<h2>Employee List</h2>
-<ul *ngFor="let groom of grooms">
-  <li>{{groom.id}}&nbsp;&nbsp;{{groom.name}}&nbsp;&nbsp;{{groom.age}}</li>
-
-</ul>
+<table border = "1">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Events</th>
+  <tr>
+  <tr *ngFor="let groom of grooms">
+    <td>{{groom.id}}</td>
+    <td>{{groom.name}}</td>
+    <td>{{groom.age}}</td>
+    <td><button>Click Me</button> </td>
+  </tr>
+</table>
 <app-login2></app-login2>

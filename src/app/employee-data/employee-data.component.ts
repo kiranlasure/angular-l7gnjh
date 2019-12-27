@@ -18,9 +18,6 @@ export class EmployeeDataComponent implements OnInit {
 
       this.groomservice.getgroomsDetails().subscribe(data =>{
           this.grooms = data;
-
-          console.log(data);
-
       },error=>{
         console.log(error)
       } );
