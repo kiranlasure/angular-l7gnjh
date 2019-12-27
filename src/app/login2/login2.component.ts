@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class Login2Component implements OnInit {
   
 
-  
+   fullName: string ="";   
   constructor() { }
 
   ngOnInit() {
