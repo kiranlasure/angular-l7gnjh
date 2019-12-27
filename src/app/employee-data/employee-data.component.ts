@@ -10,6 +10,9 @@ import { Observable } from 'rxjs';
 export class EmployeeDataComponent implements OnInit {
 
   grooms = [];
+  id = "";
+  nmae = "";
+  age = "";
   
   constructor(private groomservice: EmployeeService) { }
 
