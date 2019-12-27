@@ -12,4 +12,6 @@
     <td><button>Add</button> </td>
   </tr>
 </table>
-<app-login2></app-login2>
+
+<input type ="email" [(ngModel)] = "childData">
+<app-login2 [parentData]= "childData"></app-login2>

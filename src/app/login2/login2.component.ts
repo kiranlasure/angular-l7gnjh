@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 
 
@@ -10,11 +10,18 @@ import { Component, OnInit } from '@angular/core';
 export class Login2Component implements OnInit {
   
 
-   fullName: string ="";   
+   
+  // @Output () addDetails = new EventEmitter(); 
+  @Input() parentData;
+  
   constructor() { }
 
   ngOnInit() {
     
+  }
+  addDetail()
+  {
+
   }
 
 }
